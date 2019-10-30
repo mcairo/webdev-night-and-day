@@ -1,9 +1,10 @@
-$(document).ready(function() {
-    
-}); 
-
-function changeBodyBg(color){
-    document.body.style.background = black;
-}
-
-changeBodyBg
+$( document ).ready( function() {
+    $('#orb').click( function(){
+        if ($('#sky').hasClass('day')) {
+            $('#sky').removeClass('day').addClass('night');
+        }
+        else {
+            $('#sky').removeClass('night').addClass('day');
+        }
+    });
+});
